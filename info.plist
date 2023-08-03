@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.andreatitolo.kya-alfred</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>171EEF6E-2379-40EA-8C08-C0FAE9994173</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>68E2709C-03B3-4200-B0A9-A93FA622402C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5D14C3AA-7D9B-49AF-99AE-D5436E21A0F6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>44FEA797-DE7A-46AB-9DD6-1E3731413E4A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9ACE6100-0EE5-49EF-BF66-855AB50343F0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EF207910-5141-45A6-8E77-DF338E4E3C6F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9D01A1C9-B279-4C12-9281-E97B1AAEAF30</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>44FEA797-DE7A-46AB-9DD6-1E3731413E4A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AE6EAFA3-A9F4-4B72-881D-A1C120C3BA61</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1C817967-3245-487A-905A-4110525DD324</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D81BCCD4-4042-4742-B1D8-BCB5739B180E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EF207910-5141-45A6-8E77-DF338E4E3C6F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Andrea Titolo</string>
+	<key>description</key>
+	<string>Control Keeping You Awake from Alfred</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Control Keeping You Awake</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>triggerid</key>
+				<string>KYA Activate</string>
+				<key>triggername</key>
+				<string>ka</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>5D14C3AA-7D9B-49AF-99AE-D5436E21A0F6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open -g keepingyouawake:///activate?hours=$default</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>44FEA797-DE7A-46AB-9DD6-1E3731413E4A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>{var:k_activate}</string>
+				<key>subtext</key>
+				<string>Prevent Computer Sleep for set hours</string>
+				<key>text</key>
+				<string>KYA Activate</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>9D01A1C9-B279-4C12-9281-E97B1AAEAF30</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>{var:k_hours}</string>
+				<key>subtext</key>
+				<string>Prevent Computer Sleep for x hours</string>
+				<key>text</key>
+				<string>KYA for x hours</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>AE6EAFA3-A9F4-4B72-881D-A1C120C3BA61</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open -g keepingyouawake:///activate?hours="{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1C817967-3245-487A-905A-4110525DD324</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>{var:k_minutes}</string>
+				<key>subtext</key>
+				<string>Prevent Computer Sleep for x minutes</string>
+				<key>text</key>
+				<string>KYA for x minutes</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>171EEF6E-2379-40EA-8C08-C0FAE9994173</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open -g keepingyouawake:///activate?minutes="{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>68E2709C-03B3-4200-B0A9-A93FA622402C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open -g keepingyouawake:///deactivate</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EF207910-5141-45A6-8E77-DF338E4E3C6F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>{var:k_deactivate}</string>
+				<key>subtext</key>
+				<string>Allow the computer to go to sleep</string>
+				<key>text</key>
+				<string>KYA Deactivate</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D81BCCD4-4042-4742-B1D8-BCB5739B180E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>triggerid</key>
+				<string>kd</string>
+				<key>triggername</key>
+				<string>kd</string>
+				<key>workflowonly</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.remote</string>
+			<key>uid</key>
+			<string>9ACE6100-0EE5-49EF-BF66-855AB50343F0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>## Usage
+Control the Keeping You Awake app from Alfred. Toggle the app for some manually-defined hours or minutes, or toggle it on for a pre-defined amount of hours. There is also a toggle for turning-off the app. 
+The workflow has some pre-defined keywords but all of them can be customisable. If you have set it up, you can also use Alfred Remote to toggle the workflow on and off.
+
+![Activate KYA](images/ka.png)
+
+![Deactivate KYA](images/kd.png)
+
+![Activate KYA for x hours](images/kh.png)
+
+![Activate KYA for x minutes](images/km.png)
+
+### Commands and Keywords
+
+- `KYA Activate` (default `ka`) - Activate KYA for a set amount of time, defined by the _default hours_ variable (see below).
+- `KYA Deactivate` (default `kd`) - Deactivate KYA.
+- `KYA for x hours` (default `kh`) - Activate KYA for the hours defined manually when typing the command, e.g. `kh 8` will activate KYA for 8 hours.
+- `KYA for x minutes` (default `km`) - Same as above but with minutes instead of hours. `km 8` will activate KYA for 8 minutes.
+
+### Variables
+
+- `default hours` (default `5`) - set a predefined amount of time for the app to stay on. This number will be used by the `KYA Activate` command and by Alfred remote. 
+
+This variable is useful to just activate the app without typing hours/minutes every time. Note that without setting a default number, the app will stay on until turned off indefinetely.
+
+### Support for Alfred Remote
+
+If you have Alfred Remote installed and configured, you can add the workflow to its own page or add its commands to your page.
+
+**Currently this method only support activating and deactivating the app**. You can use the `default hours` variable to set an amount of time for the app to stay on.
+
+The process is (assuming you have Alfred Remote installed and [set-up](https://www.alfredapp.com/help/remote/setting-up/)):
+
+1. Go to the `Remote` tab in `Alfred Preferences`
+2. Click on `Add Remote Page` (the `+` button)
+3. From the popup select `Workflows` → `Control Keeping You Awake` → `KYA Alfred`
+4. The workflow choices `Activate KYA and Deactivate KYA` should now show up both in the remote page on your desktop and on your phone.</string>
+	<key>uidata</key>
+	<dict>
+		<key>171EEF6E-2379-40EA-8C08-C0FAE9994173</key>
+		<dict>
+			<key>xpos</key>
+			<real>170</real>
+			<key>ypos</key>
+			<real>465</real>
+		</dict>
+		<key>1C817967-3245-487A-905A-4110525DD324</key>
+		<dict>
+			<key>xpos</key>
+			<real>370</real>
+			<key>ypos</key>
+			<real>300</real>
+		</dict>
+		<key>44FEA797-DE7A-46AB-9DD6-1E3731413E4A</key>
+		<dict>
+			<key>xpos</key>
+			<real>370</real>
+			<key>ypos</key>
+			<real>145</real>
+		</dict>
+		<key>5D14C3AA-7D9B-49AF-99AE-D5436E21A0F6</key>
+		<dict>
+			<key>xpos</key>
+			<real>165</real>
+			<key>ypos</key>
+			<real>15</real>
+		</dict>
+		<key>68E2709C-03B3-4200-B0A9-A93FA622402C</key>
+		<dict>
+			<key>xpos</key>
+			<real>370</real>
+			<key>ypos</key>
+			<real>465</real>
+		</dict>
+		<key>9ACE6100-0EE5-49EF-BF66-855AB50343F0</key>
+		<dict>
+			<key>xpos</key>
+			<real>175</real>
+			<key>ypos</key>
+			<real>760</real>
+		</dict>
+		<key>9D01A1C9-B279-4C12-9281-E97B1AAEAF30</key>
+		<dict>
+			<key>xpos</key>
+			<real>165</real>
+			<key>ypos</key>
+			<real>145</real>
+		</dict>
+		<key>AE6EAFA3-A9F4-4B72-881D-A1C120C3BA61</key>
+		<dict>
+			<key>xpos</key>
+			<real>170</real>
+			<key>ypos</key>
+			<real>300</real>
+		</dict>
+		<key>D81BCCD4-4042-4742-B1D8-BCB5739B180E</key>
+		<dict>
+			<key>xpos</key>
+			<real>170</real>
+			<key>ypos</key>
+			<real>630</real>
+		</dict>
+		<key>EF207910-5141-45A6-8E77-DF338E4E3C6F</key>
+		<dict>
+			<key>xpos</key>
+			<real>370</real>
+			<key>ypos</key>
+			<real>630</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string>e.g.: 5</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Set a default hour/s for which to activate the extension without typing a number every time</string>
+			<key>label</key>
+			<string>Set default hours</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>default</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>ka</string>
+				<key>placeholder</key>
+				<string>ka</string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Keyword for activating the app for the defaul areas (defined in the 'Set default hours' variable) (default: ka)</string>
+			<key>label</key>
+			<string>Activate Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>k_activate</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>kd</string>
+				<key>placeholder</key>
+				<string>kd</string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Keyword for deactivating the app (default: kd)</string>
+			<key>label</key>
+			<string>Deactivate Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>k_deactivate</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>kh</string>
+				<key>placeholder</key>
+				<string>kh</string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>A keyword for starting the app for x hours (default: kh)</string>
+			<key>label</key>
+			<string>Hours Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>k_hours</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>km</string>
+				<key>placeholder</key>
+				<string>km</string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>A keyword for starting the app for x minutes (default: km)</string>
+			<key>label</key>
+			<string>Minutes Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>k_minutes</string>
+		</dict>
+	</array>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/andreatitolo/kya-alfred</string>
+</dict>
+</plist>
