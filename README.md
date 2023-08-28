@@ -2,8 +2,16 @@
 Alfred 5 workflow for interacting with KeepingYouAwake app for macOS
 
 ## Install
+
+### Manual install
 1. Install [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake)
-2. Install the workflow from the releases page (download the `.alfredworkflow` file and open it).
+2. Install the workflow from the [releases page](https://github.com/andreatitolo/kya-alfred/releases/latest) (download the `.alfredworkflow` file and open it).
+
+### Alfred Gallery 
+
+The workflow is also available on the [Alfred Gallery](https://alfred.app/workflows/andreatitolo/control-keeping-you-awake/)
+
+Note that the gallery workflow might take some time to reflect the latest release, so best to double check first.
 
 Note that the workflow requires Alfred [Powerpack](https://www.alfredapp.com/powerpack)
 
