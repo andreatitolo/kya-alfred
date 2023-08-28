@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.andreatitolo.kya-alfred</string>
-	<key>category</key>
-	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>171EEF6E-2379-40EA-8C08-C0FAE9994173</key>
@@ -149,7 +147,7 @@
 				<key>keyword</key>
 				<string>{var:k_activate}</string>
 				<key>subtext</key>
-				<string>Prevent Computer Sleep for set hours</string>
+				<string>Prevent Computer Sleep for {var:default} hours</string>
 				<key>text</key>
 				<string>KYA Activate</string>
 				<key>withspace</key>
@@ -170,9 +168,9 @@
 				<key>keyword</key>
 				<string>{var:k_hours}</string>
 				<key>subtext</key>
-				<string>Prevent Computer Sleep for x hours</string>
+				<string>Prevent Computer Sleep for {query} hours</string>
 				<key>text</key>
-				<string>KYA for x hours</string>
+				<string>KYA for {query} hours</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -214,9 +212,9 @@
 				<key>keyword</key>
 				<string>{var:k_minutes}</string>
 				<key>subtext</key>
-				<string>Prevent Computer Sleep for x minutes</string>
+				<string>Prevent Computer Sleep for {query} minutes</string>
 				<key>text</key>
-				<string>KYA for x minutes</string>
+				<string>KYA for {query} minutes</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -463,7 +461,7 @@ The process is (assuming you have Alfred Remote installed and [set-up](https://w
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>Keyword for activating the app for the defaul areas (defined in the 'Set default hours' variable) (default: ka)</string>
+			<string>Keyword for activating the app for the default areas (defined in the 'Set default hours' variable) (default: ka)</string>
 			<key>label</key>
 			<string>Activate Keyword</string>
 			<key>type</key>
@@ -535,8 +533,10 @@ The process is (assuming you have Alfred Remote installed and [set-up](https://w
 			<string>k_minutes</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>1.0</string>
+	<string>1.0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/andreatitolo/kya-alfred</string>
 </dict>
