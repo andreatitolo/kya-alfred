@@ -1,4 +1,7 @@
 # kya-alfred
+
+![Github Downloads](https://img.shields.io/github/downloads/andreatitolo/kya-alfred/total) ![GitHub release (with filter)](https://img.shields.io/github/v/release/andreatitolo/kya-alfred)
+
 Alfred 5 workflow for interacting with KeepingYouAwake app for macOS
 
 ## Install
